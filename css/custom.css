@@ -1,0 +1,63 @@
+/* NovaStrada LLC Custom Styles */
+:root {
+  --novastrada-dark-blue: #14263D;
+  --novastrada-blue: #1E4F85;
+  --novastrada-light-gray: #BDC0C6;
+  
+  /* Override Bootstrap primary colors */
+  --bs-primary: #1E4F85;
+  --bs-primary-rgb: 30, 79, 133;
+  --bs-dark: #14263D;
+  --bs-dark-rgb: 20, 38, 61;
+  --bs-secondary: #BDC0C6;
+  --bs-secondary-rgb: 189, 192, 198;
+}
+
+/* Update primary button colors */
+.btn-primary {
+  background-color: var(--novastrada-blue);
+  border-color: var(--novastrada-blue);
+}
+
+.btn-primary:hover {
+  background-color: var(--novastrada-dark-blue);
+  border-color: var(--novastrada-dark-blue);
+}
+
+/* Update navbar colors */
+.navbar-dark {
+  background-color: var(--novastrada-dark-blue) !important;
+}
+
+.bg-dark {
+  background-color: var(--novastrada-dark-blue) !important;
+}
+
+/* Update primary background colors */
+.bg-primary {
+  background-color: var(--novastrada-blue) !important;
+}
+
+/* Update text colors */
+.text-primary {
+  color: var(--novastrada-blue) !important;
+}
+
+/* Update feature icons */
+.feature {
+  background-color: var(--novastrada-blue) !important;
+}
+
+/* Update link colors */
+a {
+  color: var(--novastrada-blue);
+}
+
+a:hover {
+  color: var(--novastrada-dark-blue);
+}
+
+/* Update badge colors */
+.badge.bg-primary {
+  background-color: var(--novastrada-blue) !important;
+} 

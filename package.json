@@ -1,0 +1,17 @@
+{
+  "name": "novastrada-website",
+  "version": "1.0.0",
+  "description": "NovaStrada LLC Website with templating",
+  "main": "build.js",
+  "scripts": {
+    "build": "node build.js",
+    "dev": "node build.js && npx http-server dist -p 3000",
+    "watch": "nodemon --watch templates --watch content --exec \"npm run build\""
+  },
+  "devDependencies": {
+    "handlebars": "^4.7.8",
+    "fs-extra": "^11.1.1",
+    "nodemon": "^3.0.1",
+    "http-server": "^14.1.1"
+  }
+} 

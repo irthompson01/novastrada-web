@@ -85,7 +85,7 @@ export default function ServicesPage() {
             <h1 className="text-4xl lg:text-5xl font-bold mb-6">
               Professional Development Services
             </h1>
-            <p className="text-xl text-gray-600 mb-8">
+            <p className="text-xl text-foreground/70 mb-8">
               From concept to deployment, we provide comprehensive development and data solutions 
               tailored to your business needs.
             </p>
@@ -100,16 +100,16 @@ export default function ServicesPage() {
             {services.map((service, index) => (
               <Card key={index} className="h-full shadow-lg hover:shadow-xl transition-shadow">
                 <CardBody className="p-8">
-                  <div className="bg-primary text-white rounded-lg w-12 h-12 flex items-center justify-center mb-4">
+                  <div className="bg-primary text-primary-foreground rounded-lg w-12 h-12 flex items-center justify-center mb-4">
                     <Icon icon={service.icon} className="text-2xl" />
                   </div>
-                  <h2 className="text-2xl font-bold mb-4">{service.title}</h2>
-                  <p className="text-gray-600 mb-6">{service.description}</p>
+                  <h2 className="text-2xl font-bold mb-4 text-foreground">{service.title}</h2>
+                  <p className="text-foreground/70 mb-6">{service.description}</p>
                   <ul className="space-y-3">
                     {service.features.map((feature, featureIndex) => (
                       <li key={featureIndex} className="flex items-center">
                         <Icon icon="bi:check" className="text-primary mr-3 flex-shrink-0" />
-                        <span className="text-gray-700">{feature}</span>
+                        <span className="text-foreground">{feature}</span>
                       </li>
                     ))}
                   </ul>
@@ -121,20 +121,20 @@ export default function ServicesPage() {
       </section>
 
       {/* Process Section */}
-      <section className="py-20 bg-gray-50">
+      <section className="py-20 bg-content2">
         <div className="container mx-auto max-w-7xl px-6">
           <div className="text-center mb-16">
-            <h2 className="text-3xl lg:text-4xl font-bold mb-4">Development Process</h2>
-            <p className="text-xl text-gray-600">A structured approach to deliver quality solutions</p>
+            <h2 className="text-3xl lg:text-4xl font-bold mb-4 text-foreground">Development Process</h2>
+            <p className="text-xl text-foreground/70">A structured approach to deliver quality solutions</p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             {processSteps.map((step, index) => (
               <div key={index} className="text-center">
-                <div className="bg-primary text-white rounded-lg w-16 h-16 flex items-center justify-center mx-auto mb-4">
+                <div className="bg-primary text-primary-foreground rounded-lg w-16 h-16 flex items-center justify-center mx-auto mb-4">
                   <Icon icon={step.icon} className="text-3xl" />
                 </div>
-                <h3 className="text-xl font-bold mb-3">{step.title}</h3>
-                <p className="text-gray-600">{step.description}</p>
+                <h3 className="text-xl font-bold mb-3 text-foreground">{step.title}</h3>
+                <p className="text-foreground/70">{step.description}</p>
               </div>
             ))}
           </div>
@@ -145,8 +145,8 @@ export default function ServicesPage() {
       <section className="py-20">
         <div className="container mx-auto max-w-7xl px-6">
           <div className="text-center">
-            <h2 className="text-4xl lg:text-5xl font-bold mb-6">Ready to get started?</h2>
-            <p className="text-xl text-gray-600 mb-8">
+            <h2 className="text-4xl lg:text-5xl font-bold mb-6 text-foreground">Ready to get started?</h2>
+            <p className="text-xl text-foreground/70 mb-8">
               Let's discuss how we can help bring your project to life.
             </p>
             <Button

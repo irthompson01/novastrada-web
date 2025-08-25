@@ -13,7 +13,7 @@ export default function AboutPage() {
             <h1 className="text-4xl lg:text-5xl font-bold mb-6">
               Delivering innovative development solutions with expertise and passion.
             </h1>
-            <p className="text-xl text-gray-600 mb-8">
+            <p className="text-xl text-foreground/70 mb-8">
               NovaStrada LLC was founded to provide high-quality development and data services.
             </p>
             <Button
@@ -30,7 +30,7 @@ export default function AboutPage() {
       </header>
 
       {/* Mission Section */}
-      <section className="py-20 bg-gray-50">
+      <section className="py-20 bg-content2">
         <div className="container mx-auto max-w-7xl px-6">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
@@ -41,8 +41,8 @@ export default function AboutPage() {
               />
             </div>
             <div>
-              <h2 className="text-3xl lg:text-4xl font-bold mb-6">Our Mission</h2>
-              <p className="text-lg text-gray-600 leading-relaxed">
+              <h2 className="text-3xl lg:text-4xl font-bold mb-6 text-foreground">Our Mission</h2>
+              <p className="text-lg text-foreground/70 leading-relaxed">
                 NovaStrada LLC was created to bridge the gap between complex technical challenges 
                 and practical business solutions. We focus on delivering scalable, efficient, and 
                 innovative development services that help businesses grow and succeed in the digital landscape.
@@ -57,8 +57,8 @@ export default function AboutPage() {
         <div className="container mx-auto max-w-7xl px-6">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div className="order-2 lg:order-1">
-              <h2 className="text-3xl lg:text-4xl font-bold mb-6">Expertise & Technology</h2>
-              <p className="text-lg text-gray-600 leading-relaxed">
+              <h2 className="text-3xl lg:text-4xl font-bold mb-6 text-foreground">Expertise & Technology</h2>
+              <p className="text-lg text-foreground/70 leading-relaxed">
                 With a strong foundation in data science, computer science, and business analytics, 
                 we bring both technical depth and business acumen to every project. Our expertise 
                 spans full-stack development, cloud architecture, data analytics, and custom integrations.
@@ -76,11 +76,11 @@ export default function AboutPage() {
       </section>
 
       {/* Team Section */}
-      <section className="py-20 bg-gray-50">
+      <section className="py-20 bg-content2">
         <div className="container mx-auto max-w-7xl px-6">
           <div className="text-center mb-16">
-            <h2 className="text-3xl lg:text-4xl font-bold mb-4">Meet the Founder</h2>
-            <p className="text-xl text-gray-600">Dedicated to quality and your success</p>
+            <h2 className="text-3xl lg:text-4xl font-bold mb-4 text-foreground">Meet the Founder</h2>
+            <p className="text-xl text-foreground/70">Dedicated to quality and your success</p>
           </div>
           <div className="flex justify-center">
             <div className="text-center max-w-sm">
@@ -89,9 +89,9 @@ export default function AboutPage() {
                 alt="Ian Thompson" 
                 className="rounded-full w-48 h-48 object-cover mx-auto mb-6"
               />
-              <h3 className="text-2xl font-bold mb-2">Ian Thompson</h3>
-              <p className="text-gray-600 italic mb-3">Founder & Lead Developer</p>
-              <p className="text-gray-600 text-sm">
+              <h3 className="text-2xl font-bold mb-2 text-foreground">Ian Thompson</h3>
+              <p className="text-foreground/70 italic mb-3">Founder & Lead Developer</p>
+              <p className="text-foreground/60 text-sm">
                 BS in Data Science / Computer Science<br />
                 MS in Business Analytics
               </p>

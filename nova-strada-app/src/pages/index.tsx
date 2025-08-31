@@ -32,14 +32,14 @@ export default function IndexPage() {
   return (
     <DefaultLayout>
       {/* Hero Section */}
-      <header className="bg-secondary py-20">
+      <header className="py-20 bg-gradient-to-br from-primary to-secondary">
         <div className="container mx-auto max-w-7xl px-6">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div className="text-center lg:text-left">
-              <h1 className="text-4xl lg:text-5xl font-bold text-secondary-foreground mb-6 leading-tight">
+              <h1 className="text-4xl lg:text-5xl font-bold text-white mb-6 leading-tight">
                 Full Stack Development & Data Services
               </h1>
-              <p className="text-lg text-secondary-foreground/80 mb-8 leading-relaxed">
+              <p className="text-lg text-white/80 mb-8 leading-relaxed">
                 Delivering tailored digital solutions that seamlessly integrate front-end experiences, 
                 back-end logic, and cloud-native infrastructure. With a strong foundation in Python, 
                 API architecture, and scalable data systems, we transform complex requirements into 

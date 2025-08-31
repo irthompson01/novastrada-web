@@ -4,6 +4,7 @@ import { Link } from "@heroui/link";
 import { Icon } from "@iconify/react";
 
 import DefaultLayout from "@/layouts/default";
+import { Accordion, AccordionItem } from "@heroui/accordion";
 
 export default function ServicesPage() {
   const services = [
@@ -16,6 +17,28 @@ export default function ServicesPage() {
         "React & modern JavaScript frontends", 
         "Database design & optimization",
         "Responsive web design"
+      ]
+    },
+    {
+      icon: "bi:database",
+      title: "Data Engineering & Management",
+      description: "Reliable, scalable data platforms and governance:",
+      features: [
+        "Modern ETL/ELT pipelines (Airflow, Dagster)",
+        "Data warehousing (Snowflake, BigQuery, Redshift)",
+        "Modeling with dbt and data quality",
+        "Governance, cataloging, lineage"
+      ]
+    },
+    {
+      icon: "bi:graph-up",
+      title: "Graph Data Applications",
+      description: "Leverage graph databases for connected insights:",
+      features: [
+        "Neo4j/GraphQL APIs",
+        "Entity resolution and relationship mapping",
+        "Recommendation and path analysis",
+        "Knowledge graphs & visualization"
       ]
     },
     {
@@ -138,6 +161,27 @@ export default function ServicesPage() {
               </div>
             ))}
           </div>
+        </div>
+      </section>
+
+      {/* FAQs / Details Accordion */}
+      <section className="py-20">
+        <div className="container mx-auto max-w-7xl px-6">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl lg:text-4xl font-bold mb-4 text-foreground">Service Details</h2>
+            <p className="text-foreground/70">A few common questions about how I work</p>
+          </div>
+          <Accordion variant="splitted">
+            <AccordionItem key="1" aria-label="Engagement model" title="What does a typical engagement look like?">
+              I start with a discovery session, move into a short planning phase, then iterate in agile sprints with weekly demos.
+            </AccordionItem>
+            <AccordionItem key="2" aria-label="Deliverables" title="What do I receive at the end?">
+              Production-ready code, documentation, infrastructure as code (if applicable), and a knowledge handoff session.
+            </AccordionItem>
+            <AccordionItem key="3" aria-label="Collaboration" title="How do we collaborate?">
+              I use GitHub, linear/jira, Slack/Teams, and shared docs. I can embed with your team or operate independently.
+            </AccordionItem>
+          </Accordion>
         </div>
       </section>
 

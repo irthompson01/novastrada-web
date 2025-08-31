@@ -56,12 +56,14 @@ export default {
             foreground: '#ffffff',
             DEFAULT: '#14263D',
           },
-          background: '#ffffff',
-          foreground: '#14263D',
-          content1: '#ffffff',
-          content2: '#f8fafc',
-          content3: '#f1f5f9',
-          content4: '#e2e8f0',
+          // Light mode defaults per request: grey backgrounds, blue text
+          background: '#BDC0C6',
+          foreground: '#1E4F85',
+          // Component surfaces (lighter greys for elevation)
+          content1: '#BDC0C6',
+          content2: '#dde1e6',
+          content3: '#eef0f2',
+          content4: '#ffffff',
         }
       },
       dark: {
@@ -94,12 +96,14 @@ export default {
             foreground: '#ffffff',
             DEFAULT: '#14263D',
           },
-          background: '#0a0e14',
+          // Dark mode defaults per request: blue backgrounds, white text
+          background: '#1E4F85',
           foreground: '#ffffff',
-          content1: '#14263D',
-          content2: '#1a2332',
-          content3: '#202938',
-          content4: '#262f3e',
+          // Component surfaces (varying blues for elevation)
+          content1: '#1E4F85',
+          content2: '#1a4374',
+          content3: '#153762',
+          content4: '#102b50',
         }
       }
     }

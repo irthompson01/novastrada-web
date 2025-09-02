@@ -102,16 +102,11 @@ export default function ServicesPage() {
   return (
     <DefaultLayout>
       {/* Header */}
-      <header className="py-20">
+      <header className="py-20 bg-gradient-to-br from-primary to-secondary">
         <div className="container mx-auto max-w-7xl px-6">
           <div className="text-center max-w-4xl mx-auto">
-            <h1 className="text-4xl lg:text-5xl font-bold mb-6">
-              Professional Development Services
-            </h1>
-            <p className="text-xl text-foreground/70 mb-8">
-              From concept to deployment, we provide comprehensive development and data solutions 
-              tailored to your business needs.
-            </p>
+            <h1 className="text-4xl lg:text-5xl font-bold mb-6 text-white">Professional Development Services</h1>
+            <p className="text-xl text-white/80 mb-8">From concept to deployment, we provide comprehensive development and data solutions tailored to your business needs.</p>
           </div>
         </div>
       </header>
@@ -121,9 +116,9 @@ export default function ServicesPage() {
         <div className="container mx-auto max-w-7xl px-6">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
             {services.map((service, index) => (
-              <Card key={index} className="h-full shadow-lg hover:shadow-xl transition-shadow">
+              <Card key={index} className="h-full shadow-lg hover:shadow-xl transition-shadow border-2 border-[#1E4F85] dark:border-[#9aa0a6]/50">
                 <CardBody className="p-8">
-                  <div className="bg-primary text-primary-foreground rounded-lg w-12 h-12 flex items-center justify-center mb-4">
+                  <div className="bg-primary text-primary-foreground dark:bg-[#BDC0C6] dark:text-[#1E4F85] rounded-lg w-12 h-12 flex items-center justify-center mb-4">
                     <Icon icon={service.icon} className="text-2xl" />
                   </div>
                   <h2 className="text-2xl font-bold mb-4 text-foreground">{service.title}</h2>
@@ -131,7 +126,7 @@ export default function ServicesPage() {
                   <ul className="space-y-3">
                     {service.features.map((feature, featureIndex) => (
                       <li key={featureIndex} className="flex items-center">
-                        <Icon icon="bi:check" className="text-primary mr-3 flex-shrink-0" />
+                        <Icon icon="bi:check" className="text-[#1E4F85] dark:text-[#9aa0a6] mr-3 flex-shrink-0" />
                         <span className="text-foreground">{feature}</span>
                       </li>
                     ))}
@@ -144,7 +139,7 @@ export default function ServicesPage() {
       </section>
 
       {/* Process Section */}
-      <section className="py-20 bg-content2">
+      <section className="py-20">
         <div className="container mx-auto max-w-7xl px-6">
           <div className="text-center mb-16">
             <h2 className="text-3xl lg:text-4xl font-bold mb-4 text-foreground">Development Process</h2>
@@ -153,7 +148,7 @@ export default function ServicesPage() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             {processSteps.map((step, index) => (
               <div key={index} className="text-center">
-                <div className="bg-primary text-primary-foreground rounded-lg w-16 h-16 flex items-center justify-center mx-auto mb-4">
+                <div className="bg-primary text-primary-foreground dark:bg-[#BDC0C6] dark:text-[#1E4F85] rounded-lg w-16 h-16 flex items-center justify-center mx-auto mb-4">
                   <Icon icon={step.icon} className="text-3xl" />
                 </div>
                 <h3 className="text-xl font-bold mb-3 text-foreground">{step.title}</h3>
@@ -198,7 +193,7 @@ export default function ServicesPage() {
               href="/contact"
               color="primary"
               size="lg"
-              className="px-8"
+              className="px-8 bg-primary text-primary-foreground dark:bg-[#BDC0C6] dark:text-[#1E4F85]"
             >
               Contact Us Today
             </Button>

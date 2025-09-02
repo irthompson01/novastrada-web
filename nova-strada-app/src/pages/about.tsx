@@ -1,5 +1,6 @@
 import { Button } from "@heroui/button";
 import { Link } from "@heroui/link";
+import { Icon } from "@iconify/react";
 
 import DefaultLayout from "@/layouts/default";
 
@@ -7,13 +8,16 @@ export default function AboutPage() {
   return (
     <DefaultLayout>
       {/* Header */}
-      <header className="py-20">
+      <header className="py-20 bg-gradient-to-br from-primary to-secondary">
         <div className="container mx-auto max-w-7xl px-6">
           <div className="text-center max-w-4xl mx-auto">
-            <h1 className="text-4xl lg:text-5xl font-bold mb-6">
+            <div className="bg-white/20 backdrop-blur-sm rounded-lg w-16 h-16 flex items-center justify-center mx-auto mb-6">
+              <Icon icon="bi:building" className="text-3xl text-white" />
+            </div>
+            <h1 className="text-4xl lg:text-5xl font-bold mb-6 text-white">
               Delivering innovative development solutions with expertise and passion.
             </h1>
-            <p className="text-xl text-foreground/70 mb-8">
+            <p className="text-xl text-white/80 mb-8">
               NovaStrada LLC was founded to provide high-quality development and data services.
             </p>
             <Button
@@ -21,7 +25,7 @@ export default function AboutPage() {
               href="/services"
               color="primary"
               size="lg"
-              className="px-8"
+              className="px-8 bg-primary text-primary-foreground dark:bg-[#BDC0C6] dark:text-[#1E4F85]"
             >
               Learn More About Our Services
             </Button>
@@ -30,15 +34,13 @@ export default function AboutPage() {
       </header>
 
       {/* Mission Section */}
-      <section className="py-20 bg-content2">
+      <section className="py-20">
         <div className="container mx-auto max-w-7xl px-6">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-            <div>
-              <img 
-                src="/assets/mission.png" 
-                alt="NovaStrada Development" 
-                className="rounded-lg w-full"
-              />
+            <div className="flex justify-center">
+              <div className="bg-primary text-primary-foreground dark:bg-[#BDC0C6] dark:text-[#1E4F85] rounded-lg w-24 h-24 flex items-center justify-center">
+                <Icon icon="streamline:target" className="text-4xl" />
+              </div>
             </div>
             <div>
               <h2 className="text-3xl lg:text-4xl font-bold mb-6 text-foreground">Our Mission</h2>
@@ -64,19 +66,17 @@ export default function AboutPage() {
                 spans full-stack development, cloud architecture, data analytics, and custom integrations.
               </p>
             </div>
-            <div className="order-1 lg:order-2">
-              <img 
-                src="/assets/expertise.png" 
-                alt="Technology Stack" 
-                className="rounded-lg w-full"
-              />
+            <div className="order-1 lg:order-2 flex justify-center">
+              <div className="bg-primary text-primary-foreground dark:bg-[#BDC0C6] dark:text-[#1E4F85] rounded-lg w-24 h-24 flex items-center justify-center">
+                <Icon icon="bi:cpu" className="text-4xl" />
+              </div>
             </div>
           </div>
         </div>
       </section>
 
       {/* Team Section */}
-      <section className="py-20 bg-content2">
+      <section className="py-20">
         <div className="container mx-auto max-w-7xl px-6">
           <div className="text-center mb-16">
             <h2 className="text-3xl lg:text-4xl font-bold mb-4 text-foreground">Meet the Founder</h2>
@@ -87,7 +87,7 @@ export default function AboutPage() {
               <img 
                 src="/assets/headshot.JPG" 
                 alt="Ian Thompson" 
-                className="rounded-full w-48 h-48 object-cover mx-auto mb-6"
+                className="rounded-3xl w-56 h-72 object-cover object-top mx-auto mb-6"
               />
               <h3 className="text-2xl font-bold mb-2 text-foreground">Ian Thompson</h3>
               <p className="text-foreground/70 italic mb-3">Founder & Lead Developer</p>

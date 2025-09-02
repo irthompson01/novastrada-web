@@ -23,29 +23,33 @@ const navItems = [
 
 export const Navbar = () => {
   return (
-    <HeroUINavbar maxWidth="full" className="bg-primary text-primary-foreground" position="sticky">
+    <HeroUINavbar
+      maxWidth="full"
+      className="py-4 bg-secondary text-white text-xlg md:text-xl"
+      position="sticky"
+    >
       <NavbarContent className="basis-1/5 sm:basis-full" justify="start">
+        <NavbarMenuToggle className="sm:hidden mr-2" />
         <NavbarBrand className="gap-3 max-w-fit">
-          <Link
-            className="flex justify-start items-center gap-2"
-            color="foreground"
-            href="/"
+                      <Link
+              className="flex justify-start items-center gap-2 text-white"
+              href="/"
           >
             <img 
-              src="/assets/logo_crop.PNG" 
+              src="/assets/logo_crop_no_bg.png" 
               alt="NovaStrada LLC" 
-              height={80} 
-              className="h-20"
+              height={96} 
+              className="h-24"
             />
           </Link>
         </NavbarBrand>
-        <div className="hidden lg:flex gap-6 justify-start ml-6">
+        <div className="hidden lg:flex gap-8 justify-start ml-6">
           {navItems.map((item) => (
             <NavbarItem key={item.href}>
               <Link
                 className={clsx(
                   linkStyles({ color: "foreground" }),
-                  "data-[active=true]:font-medium text-primary-foreground hover:text-content4 transition-colors",
+                  "text-white data-[active=true]:font-semibold hover:opacity-80 transition-colors",
                 )}
                 href={item.href}
               >
@@ -67,15 +71,14 @@ export const Navbar = () => {
 
       <NavbarContent className="sm:hidden basis-1 pl-4" justify="end">
         <ThemeSwitch />
-        <NavbarMenuToggle className="text-foreground" />
       </NavbarContent>
 
-      <NavbarMenu className="bg-primary text-primary-foreground">
-        <div className="mx-4 mt-2 flex flex-col gap-2">
+      <NavbarMenu className="bg-secondary text-white text-lg">
+        <div className="mx-4 mt-8 flex flex-col gap-2">
           {navItems.map((item, index) => (
             <NavbarMenuItem key={`${item.label}-${index}`}>
               <Link
-                className="text-primary-foreground hover:text-content4 transition-colors"
+                className="text-white hover:opacity-80 transition-colors"
                 href={item.href}
                 size="lg"
               >

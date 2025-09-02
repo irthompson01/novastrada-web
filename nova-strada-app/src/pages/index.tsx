@@ -26,6 +26,16 @@ export default function IndexPage() {
       icon: "bi:bar-chart",
       title: "Data Science & Analytics",
       description: "Data science, ETL workflows, and business intelligence solutions to unlock insights from your data."
+    },
+    {
+      icon: "bi:database",
+      title: "Data Engineering & Management",
+      description: "Modern ETL/ELT pipelines, warehousing, modeling and governance for reliable analytics."
+    },
+    {
+      icon: "bi:graph-up",
+      title: "Graph Data Applications",
+      description: "Graph databases, relationship modeling and connected insights for smarter applications."
     }
   ];
 
@@ -48,10 +58,10 @@ export default function IndexPage() {
               <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
                 <Button
                   as={Link}
-                  href="#services"
+                  href="/services"
                   color="primary"
                   size="lg"
-                  className="px-8"
+                  className="px-8 bg-primary text-primary-foreground dark:bg-[#BDC0C6] dark:text-[#1E4F85]"
                 >
                   Our Services
                 </Button>
@@ -67,10 +77,10 @@ export default function IndexPage() {
               </div>
             </div>
             <div className="hidden lg:flex justify-center">
-              <img 
-                src="/assets/homepage_pic.png" 
-                alt="Development Services" 
-                className="rounded-lg max-h-80 object-cover"
+              <img
+                src="/assets/logo_crop_no_bg.png"
+                alt="NovaStrada Logo"
+                className="max-h-72 object-contain drop-shadow-xl"
               />
             </div>
           </div>
@@ -89,9 +99,9 @@ export default function IndexPage() {
             <div className="lg:col-span-2">
               <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                 {services.map((service, index) => (
-                  <Card key={index} className="h-full shadow-lg hover:shadow-xl transition-shadow">
+                  <Card key={index} className="h-full shadow-lg hover:shadow-xl transition-shadow border-2 border-[#1E4F85] dark:border-[#9aa0a6]/50">
                     <CardBody className="p-6">
-                      <div className="bg-primary text-primary-foreground rounded-lg w-12 h-12 flex items-center justify-center mb-4">
+                      <div className="bg-primary text-primary-foreground dark:bg-[#BDC0C6] dark:text-[#1E4F85] rounded-lg w-12 h-12 flex items-center justify-center mb-4">
                         <Icon icon={service.icon} className="text-2xl" />
                       </div>
                       <h3 className="text-xl font-semibold mb-3 text-foreground">{service.title}</h3>

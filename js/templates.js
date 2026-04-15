@@ -3,10 +3,10 @@ class NovaStradaTemplates {
     // With Blog and Projects Dropdowns
     // static navbar() {
     //     return `
-    //         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    //         <nav class="navbar navbar-expand-lg navbar-light navbar-site">
     //             <div class="container px-5">
-    //                 <a class="navbar-brand" href="index.html">
-    //                     <img src="assets/logo_crop.PNG" alt="NovaStrada LLC" height="100" class="me-2">
+    //                 <a class="navbar-brand py-2" href="index.html">
+    //                     <img src="assets/ns_logo_vector.svg" alt="NovaStrada LLC" class="d-inline-block navbar-brand-logo">
     //                 </a>
     //                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
     //                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -38,10 +38,10 @@ class NovaStradaTemplates {
     // Without Blog and Projects Dropdowns
     static navbar() {
         return `
-            <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <nav class="navbar navbar-expand-lg navbar-light navbar-site">
                 <div class="container px-5">
-                    <a class="navbar-brand" href="index.html">
-                        <img src="assets/logo_crop.PNG" alt="NovaStrada LLC" height="100" class="me-2">
+                    <a class="navbar-brand py-2" href="index.html">
+                        <img src="assets/ns_logo_vector.svg" alt="NovaStrada LLC" class="d-inline-block navbar-brand-logo">
                     </a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -80,7 +80,7 @@ class NovaStradaTemplates {
             <meta name="author" content="${author}" />
             <title>${title}</title>
             <!-- Favicon-->
-            <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+            <link rel="icon" type="image/png" href="assets/ns_logo_favicon.png" />
             <!-- Bootstrap icons-->
             <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
             <!-- Core theme CSS (includes Bootstrap)-->
